@@ -7,6 +7,7 @@ def getImageInfo(data):
     height = -1
     width = -1
     content_type = ''
+    global w,h
 
     # handle GIFs
     if (size >= 10) and data[:6] in ('GIF87a', 'GIF89a'):
